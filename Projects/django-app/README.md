@@ -16,8 +16,15 @@ This repository contains a Django application that has been containerized using 
    git clone https://github.com/pundir8372/Docker-for-DevOps.git
    cd Docker-for-DevOps/Projects/django-app
    
-2. Build the Docker image:
-  docker build -t django-app .
+Build the Docker image:
 
-3.
-   
+bash
+Copy code
+docker build -t django-app .
+Run the Docker container:
+
+bash
+Copy code
+docker run -d -p 8000:8000 django-app
+
+Now you can access the application at http://127.0.0.1:8000.
