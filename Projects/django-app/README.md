@@ -17,11 +17,11 @@ This repository contains a Django application that has been containerized using 
    cd Docker-for-DevOps/Projects/django-app
    
 2. **Build the Docker image**
-   
-```docker build -t django-app```
+   ```bash
+   docker build -t django-app
 
  4. **Run the Docker container**
-    
-  ```docker run -d -p 8000:8000 django-app```  
+    ```bash
+    ```docker run -d -p 8000:8000 django-app```  
 
 Now you can access the application at http://127.0.0.1:8000.
