@@ -1,57 +1,63 @@
-Docker Commands
-Basic Docker Setup
-Check Docker version:
-docker --version
-Working with Docker Images
-Pull the latest Ubuntu image:
-docker pull ubuntu
+# Docker Commands
 
-List all Docker images on your system:
-docker images
+## Basic Docker Setup
+- **Check Docker version:**  
+  docker --version
 
-Working with Docker Containers
-Run an Ubuntu container:
-docker run ubuntu
+## Working with Docker Images
+- **Pull the latest Ubuntu image:**  
+  docker pull ubuntu:latest
 
-Run an Ubuntu container in detached mode with interactive terminal:
-docker run -dit ubuntu
+- **List all Docker images on your system:**  
+  docker images
 
-List running containers:
-docker ps
+## Working with Docker Containers
+- **Run an Ubuntu container:**  
+  docker run ubuntu:latest
 
-List all containers, including stopped ones:
-docker ps -a
+- **Run an Ubuntu container in detached mode with interactive terminal:**  
+  docker run -dit ubuntu:latest
 
-Managing Directories for Docker Projects
-Create a directory named docker-practice:
-mkdir docker-practice
+- **List running containers:**  
+  docker ps
 
-Remove the docker-practice directory:
-rm docker-practice
+- **List all containers, including stopped ones:**  
+  docker ps -a
 
-Create another directory named docker-basic:
-mkdir docker-basic
+## Managing Directories for Docker Projects
+- **Create a directory named `docker-practice`:**  
+  mkdir docker-practice
 
-Cloning and Building Docker Projects
-Change to the docker-basic directory:
-cd docker-basic/
+- **Remove the `docker-practice` directory:**  
+  rm docker-practice
 
-Clone a sample Java Docker project from GitHub:
-git clone https://github.com/LondheShubham153/simple-java-docker.git
+- **Create another directory named `docker-basic`:**  
+  mkdir docker-basic
 
-Change to the cloned project directory:
-cd simple-java-docker
+## Cloning and Building Docker Projects
+- **Change to the `docker-basic` directory:**  
+  cd docker-basic/
 
-Build a Docker image from the Dockerfile in the project:
-docker build -t java-app .
+- **Clone a sample Java Docker project from GitHub:**  
+  git clone https://github.com/LondheShubham153/simple-java-docker.git
 
-Running a Custom Docker Image
-Run a container using the built Java app image:
-docker run java-app
-Other Useful Commands
-Clear the terminal screen:
-clear
+- **Change to the cloned project directory:**  
+  cd simple-java-docker
 
-List files in the current directory:
-ls
+- **Build a Docker image from the `Dockerfile` in the project:**  
+  docker build -t java-app .
+
+## Running a Custom Docker Image
+- **Run a container using the built Java app image:**  
+  docker run java-app:latest
+
+## Other Useful Commands
+- **Clear the terminal screen:**  
+  clear
+
+- **List files in the current directory:**  
+  ls
+
+---
+
 
