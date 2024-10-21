@@ -22,6 +22,6 @@ This repository contains a Django application that has been containerized using 
 
  4. **Run the Docker container**
     ```bash
-    ```docker run -d -p 8000:8000 django-app```  
+    docker run -d -p 8000:8000 django-app  
 
 Now you can access the application at http://127.0.0.1:8000.
